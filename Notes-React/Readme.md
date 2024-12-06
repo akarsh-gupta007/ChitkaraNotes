@@ -1,7 +1,7 @@
 # Topics
 
 1. React Introduction
-    * What is React
+    * React Intro
     * React vs Vue vs Angular
     * How to create React application and file structure
 2. React Features
@@ -100,7 +100,7 @@
 
 ## DAY-1
 
-## What is React.JS?
+## React.JS intro
 
 * React.js is a popular **open-source JavaScript library** used to build user interfaces for web applications. It was developed by `Facebook` and has been widely adopted by the web development community for its simplicity, speed, and flexibility.
 
@@ -467,7 +467,7 @@ Class-based components have a few advantages over functional components, such as
 
 In general, functional components are preferred for modern React development, as they are easier to write and maintain, and provide better performance. However, class-based components are still a valuable tool in the React developer's toolbox, and can be useful in some specialized cases.
 
-### what is constructor and super key word?
+### constructor and super key word
 **constructor** are used for 2 purposes : <br>
 In React class components to initialize the component's state and to bind event handlers.<br>
 
@@ -1657,7 +1657,7 @@ export default EventBind
 * Onselect: text is selected 
 
 
-## What are synthetic events in ReactJS ?
+## synthetic events in ReactJS ?
 
 In order to work as a cross-browser application, React has created a wrapper same as the native browser in order to avoid creating multiple implementations for multiple methods for multiple browsers, creating common names for all events across browsers. Another benefit is that it increases the performance of the application as React reuses the event object.
 
@@ -2335,12 +2335,12 @@ In simple terms, useRef can be used to store values that don't change often and 
 
 In software development, we’re generally obsessed with performance gains and how to make our applications perform faster to give users a better experience.
 
-### What is memoization?
+###  memoization.
 In simple terms, memoization is a process that allows us to cache the values of recursive/expensive function calls so that the next time the function is called with the same argument(s), the cached value is returned rather than having to re-compute the function.
 
 This ensures that our applications run faster because we avoid the time it would usually take to re-execute the function by returning a value that’s already stored in memory.
 
-### What is React.memo()?
+### React.memo()?
 React.memo() was released with React v16.6. While class components already allowed you to control re-renders with the use of PureComponent or shouldComponentUpdate, React 16.6 introduced the ability to do the same with functional components.
 ```javascript
 //Parent.js
@@ -2597,7 +2597,7 @@ useCallback will return a memoized version of the callback that only changes if 
 In simple terms, useCallback can be used to optimize the performance of your React components by avoiding unnecessary re-renders of child components.
 Certainly! Let's break down the **`useCallback`** hook, how it works, and how it differs from `useMemo`. I'll explain when to use it, provide an example, and show why it's useful for performance optimization in React.
 
-### What is `useCallback`?
+### `useCallback`
 
 - **`useCallback`** is a React hook that **returns a memoized version of a function**.
 - It only creates a **new function** if its dependencies change.
@@ -2977,7 +2977,7 @@ export default SecondComponent
 
 # Routing
 
-## What is a React Router ?
+## React Router.
 * React Router is a powerful routing library built on top of React that helps to flow your application incredibly quickly, while
 keeping the URL in sync with what's being displayed on the page.
 
@@ -2994,25 +2994,25 @@ react-router-dom is the core plus the React Router elements such as
 `<BrowserRouter>` and `<NavLink>`
 Since react-router-dom is like a super-set of react-router, you only need to import react-router-dom.
 
-### **What is BrowserRouter ?**
+### **BrowserRouter **
 BrowserRouter is responsible for understanding the url and then going ahead and ensuring that ui that we have or component we have is as per that particular url
 
 Installation
 ```
 npm i react-router-dom
 ```
-### **What is Routes ?**
+### **Routes**
 The Routes component is used to define the routes for your application. It takes one or more Route components as its children and renders the first Route that matches the current URL. If none of the Route components match the current URL, the Routes component renders nothing.
 
-### **What is Route ?**
+### **Route **
 
 The Route component is used to define a single route in your application. It takes two props: path and element. The path prop specifies the URL pattern that the Route should match, and the element prop specifies the component that should be rendered when the Route matches.
 
-### **What is path ?**
+### **path.**
 
 The path prop is used to specify the URL pattern that a Route should match. It can be a string or a regular expression that matches the desired URL pattern. For example, if you want to match the URL /about with a Route, you would set the path prop to "/about".
 
-### **What is Link in React ?**
+### **Link in React.**
 Link is a primary way to allow users to navigate around your application from page to another without loading
 The difference between link and anchor tag is that
 
@@ -4547,7 +4547,7 @@ export default ChildOne
 ### **Q. What is HTTP ?**
 HTTP (Hypertext Transfer Protocol) is a protocol that is used to transfer hypertext from client end to server end .
 
-**What are HTTP request Methods ?**
+**  HTTP request Methods**
 * Get: This method retrieves information from a given server using a given URL
 * Post: Post method sends the data to server Example: need to update the phone number of user we will use post method
 * Put: It is used to replace all current representations of target resources with uploaded content
